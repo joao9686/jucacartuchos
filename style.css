@@ -139,7 +139,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+
   }
+
   
   .modal-content {
     background-color: #fff;
@@ -149,6 +152,11 @@
     width: 80%;
     max-width: 600px;
     text-align: center;
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+  }
+  .modal.show .modal-content {
+    transform: scale(1);
   }
   
   .fechar {
@@ -258,3 +266,11 @@ a:hover {
   text-decoration: underline; /* Opcional: sublinha o link ao passar o mouse */
   color: #007bff; /* Opcional: muda a cor do link ao passar o mouse */
 }
+
+@media (max-width: 600px) {
+  header img {
+    width: 150px;
+    height: auto;
+  }
+}
+
