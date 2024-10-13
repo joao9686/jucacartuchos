@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0px;
+  }
+  
+  header {
+    background-color: #242424;
+    color: #fff;
+    padding: 5px 0; /* Aumentei o padding para manter o título centralizado e afastado das bordas */
+    text-align: center;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  section#navbar{
+    background-color: #333;
+  }
+  section#home {
+    background-color: #e2e2e2;
+  }
+  
+  footer {
+    background-color: #333; /* Cor de fundo */
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Padrão: itens empilhados no mobile */
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 99%; /* Garante que ocupe toda a largura */
+}
+
+.footer-logotipo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-logotipo p {
+    margin-right: 0px;
+}
+
+.footer-logotipo img {
+    width: 75px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para desktop */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Alinha horizontalmente no desktop */
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .direitos {
+        margin-right: auto; /* Empurra para o canto esquerdo */
+    }
+
+    .footer-logotipo {
+        margin-left: auto; /* Empurra para o canto direito */
+    }
+}
+
+
+  /* Estilo do título dos serviços */
+  #servicos h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Estilo dos ícones */
+  .servicos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os ícones em cada linha */
+    text-align: center;
+}
+
+.servico {
+    flex: 1 1 30%; /* Faz com que cada ícone ocupe aproximadamente 45% da linha */
+    min-width: 150px; /* Define a largura mínima de cada ícone */
+    margin: 20px;
+}
+
+.servico i {
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.servico i:hover {
+    color: #007bff;
+}
+
+  
+  /* Estilo dos modais */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .servicos-container {
+      flex-direction: column; /* Ícones ficam na vertical em telas pequenas */
+      align-items: center;
+    }
+  
+    .servico {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .servico i {
+      font-size: 30px; /* Tamanho dos ícones reduzido para telas menores */
+    }
+  
+    footer p {
+      font-size: 10px; /* Reduzindo tamanho da fonte no rodapé */
+      color :#888
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .servico i {
+      font-size: 25px; /* Ícones menores em dispositivos móveis */
+    }
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between; /* Espaça as colunas à esquerda e direita */
+    flex-wrap: wrap; /* Ajuste para telas menores */
+    margin-top: 20px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+.contact-right {
+    text-align: left;
+}
+
+
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #25d366;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Para telas menores, exibir as colunas uma embaixo da outra */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left, .contact-right {
+        text-align: center;
+    }
+}
+
+a {
+  color: inherit; /* Faz com que o link herde a cor do texto ao redor */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* Opcional: sublinha o link ao passar o mouse */
+  color: #007bff; /* Opcional: muda a cor do link ao passar o mouse */
+}

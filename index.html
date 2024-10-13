@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title> JUCA CARTUCHOS E INFORMATICA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="JUC@ CARTUCHOS E Informática" height="200">
+    </header>
+
+    <section id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Nossos Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="home">
+        <h2>Bem-vindo à Juca Cartuchos e Informática!</h2>
+        <p>Oferecemos uma variedade de serviços para atender suas necessidades tecnológicas.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <i class="fas fa-laptop" onclick="abrirModal('modal1')"></i>
+                <p>Manutenção de Computadores</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-print" onclick="abrirModal('modal2')"></i>
+                <p>Manuntenção de Impressoras</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-network-wired" onclick="abrirModal('modal3')"></i>
+                <p>Cabeamento Estruturado</p>
+            </div>
+            <div class="servico">
+                <i class="fas fa-shopping-cart" onclick="abrirModal('modal4')"></i>
+                <p>Venda de Equipamentos de Informatica</p>
+            </div>
+            <div class="servico">
+                <i class="fa-solid fa-server" onclick="abrirModal('modal4')"></i>
+                <p>Venda de Moveis Para Escritorio</p>
+            </div>
+
+            <div class="servico">
+                <i class="fa-solid fa-robot" onclick="abrirModal('modal4')"></i>
+                <p>Automação Residencial e Comercial</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        
+        <div class="contact-container">
+            
+            <div class="contact-left">
+                <h2>Contato</h2>
+                <p><i class="fas fa-phone"></i> Telefone Fixo: (67) 67 3441-4981</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/556796544981" target="_blank">(67) 99654-4981</a></p>
+            </div>
+            <div class="contact-right">
+                <h2>Endereço</h2>
+                <a href="https://maps.app.goo.gl/7u2qcVsThyxk72De9">
+                <p><i class="fas fa-map-marker-alt"></i> Rua Vearni Castro, 1515 - Centro, Nova Andradina - MS, 79750-000</p>
+                </a>
+               <!-- <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509817!2d144.95592831531595!3d-37.81720997975154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779876f7df711e!2sFlinders+Street+Station!5e0!3m2!1sen!2sus!4v1631813706904!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>-->
+            </div>
+        </div>
+
+    </section>
+    
+
+    <footer>
+        <div class="container footer-content">
+            <p class="direitos">&copy; 2024 - Todos os direitos reservados.</p>
+            <div class="footer-logotipo">
+                <p>Desenvolvido por:</p>
+                <a href="https://w.app/6VRKtj" target="_blank">
+                    <img src="img/logo_jvdev.png" alt="Logo JVDev">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+            <h2>Manutenção de Computadores</h2>
+            <p>Descrição do serviço de manutenção de computadores.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+            <h2>Suporte Técnico</h2>
+            <p>Descrição do serviço de suporte técnico.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+            <h2>Consultoria em TI</h2>
+            <p>Descrição do serviço de consultoria em TI.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+            <h2>Venda de Equipamentos</h2>
+            <p>Descrição do serviço de venda de equipamentos.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
