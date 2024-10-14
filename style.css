@@ -308,34 +308,3 @@ a:hover {
   }
 }
 
-.redes-sociais {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-}
-
-.redes-sociais h2 {
-  margin-bottom: 10px;
-  font-size: 28px;
-}
-
-.redes-sociais p {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.icones-redes-sociais {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espaçamento entre os ícones */
-}
-
-.icones-redes-sociais a {
-  color: #333; /* Cor dos ícones */
-  font-size: 36px; /* Tamanho dos ícones */
-  transition: color 0.3s ease;
-}
-
-.icones-redes-sociais a:hover {
-  color: #007bff; /* Cor ao passar o mouse */
-}
