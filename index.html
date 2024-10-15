@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N84EFX7PMT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N84EFX7PMT');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="image/png">
     <title> JUCA CARTUCHOS E INFORMATICA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap">
+
 </head>
 <body>
     <header>
@@ -24,19 +17,19 @@
 
     <section id="navbar">
         <nav>
-            <ul class="nav-left">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos"> Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
             <ul class="nav-right">
-             
                 <li>
-                    <a href="https://www.instagram.com/jucac_artuchos/" target="_blank" aria-label="Instagram">
+                    <a href="https://www.instagram.com/SeuPerfil" target="_blank" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
-    
                 <li>
                     <a href="https://wa.me/556796544981" target="_blank" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
@@ -45,6 +38,7 @@
             </ul>
         </nav>
     </section>
+    
     
     <section id="home">
         <h2>Bem-vindo à Juca Cartuchos e Informática!</h2>
@@ -84,47 +78,56 @@
     </section>
 
     <section id="contato">
-        
         <div class="contact-container">
-            
-            <div class="contact-left">
-                <h2>Contato</h2>
-                <p><i class="fas fa-phone"></i> Telefone Fixo: (67) 67 3441-4981</p>
-                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/556796544981" target="_blank">(67) 99654-4981</a></p>
-            </div>
+            <!-- Coluna de Informações de Contato e Mapa -->
             <div class="contact-right">
-                <h2>Endereço</h2>
-                <a href="https://maps.app.goo.gl/7u2qcVsThyxk72De9">
-                <p><i class="fas fa-map-marker-alt"></i> Rua Vearni Castro, 1515 - Centro, Nova Andradina - MS, 79750-000</p>
-                </a>
-               <!-- <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509817!2d144.95592831531595!3d-37.81720997975154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779876f7df711e!2sFlinders+Street+Station!5e0!3m2!1sen!2sus!4v1631813706904!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="100" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
-                </div>-->
+                <h2>Nosso Contato</h2>
+                <div class="contact-info">
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/556796544981" target="_blank">(67) 99654-4981</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/TX7n4nNLacdu6NLg6" target="_blank">Rua Vearni Castro, 1515 - Centro, Nova Andradina - MS</a></p>
+                </div>
+    
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.802181065406!2d-53.35325152488332!3d-22.247583179724543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948e7ce2891e3ae7%3A0x6c5344554cd19bf2!2sJuca%20Cartuchos%20e%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1728947681587!5m2!1spt-BR!2sbr"  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    
+            <!-- Coluna do Formulário de Contato -->
+            <div class="contact-left">
+                <h2>Fale Conosco</h2>
+                <p>Entre em contato preenchendo o formulário abaixo ou diretamente pelo WhatsApp.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+                <div id="formMessage"></div> <!-- Div para mostrar mensagem de sucesso/erro -->
             </div>
         </div>
-
     </section>
     
 
-    <footer>
-        <div class="container footer-content">
-            <p class="direitos">&copy; 2024 - Todos os direitos reservados.</p>
-            <div class="footer-logotipo">
-                <p>Desenvolvido por:</p>
-                <a href="https://w.app/6VRKtj" target="_blank">
-                    <img src="img/logo_jvdev.png" alt="Logo JVDev">
-                </a>
-            </div>
+    <footer id="footer">
+       
+        <div class="footer-bottom">
+            <div class="footer-col">
+                <h3>Conecte-se Conosco</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/SeuPerfil" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/556796544981" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            <p>&copy; 2024 Juca Cartuchos e Informática - Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://w.app/6VRKtj" target="_blank">JVDev</a></p>
+            <img src="img/logo_jvdev.png" alt="Logo JVDev" width="100px">
+            
         </div>
     </footer>
-    
     
 
     <div id="modal1" class="modal">
