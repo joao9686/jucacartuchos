@@ -72,7 +72,7 @@ ul.nav-right li a:hover {
 /* Estilos para telas pequenas */
 @media (max-width: 768px) {
   .nav-left ul {
-      flex-direction: column; /* Os links ficam em coluna no mobile */
+      flex-direction: line; /* Os links ficam em coluna no mobile */
       text-align: left;
   }
 
