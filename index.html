@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="JUC@ CARTUCHOS E Informática" height="200">
+        <img src="img/logo.png" alt="JUC@ CARTUCHOS E Informática" height="250">
     </header>
 
     <section id="navbar">
@@ -50,6 +50,11 @@
         <h2>Nossos Serviços</h2>
         <div class="servicos-container">
             <div class="servico">
+                <i class="fa-solid fa-print" onclick="abrirModal('modal7')"></i>
+                <p>Aluguel de Impressoras</p>
+            </div>
+        
+            <div class="servico">
                 <i class="fas fa-laptop" onclick="abrirModal('modal1')"></i>
                 <p>Manutenção de Computadores</p>
             </div>
@@ -73,6 +78,10 @@
             <div class="servico">
                 <i class="fa-solid fa-robot" onclick="abrirModal('modal6')"></i>
                 <p>Automação Residencial e Comercial</p>
+            </div>
+            <div class="servico">
+                <i class="fa-solid fa-clock" onclick="abrirModal('modal8')"></i>
+                <p>Relogio Ponto</p>
             </div>
         </div>
     </section>
@@ -195,6 +204,22 @@
 
         </div>
     </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modal7')">&times;</span>
+            <h2>Aluguel de Impressoras</h2>
+            <p>Aluguel de impressoras para empresas, escritórios e residências! Disponibilizamos modelos de alta qualidade das marcas HP, Samsung, Brother, Canon e Epson, com manutenção e suporte inclusos. Tenha uma solução prática e econômica para o seu dia a dia, sem preocupações com suprimentos. Entre em contato e descubra como o aluguel de impressoras pode facilitar sua rotina.</p>
+
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+            <div class="modal-content">
+                <span class="fechar" onclick="fecharModal('modal8')">&times;</span>
+                <h2>Relogio Ponto</h2>
+                <p>Venda e instalação de relógios de ponto para empresas! Soluções modernas e confiáveis para controle de jornada, facilitando a gestão de presença dos colaboradores. Oferecemos modelos avançados, com suporte técnico especializado desde a instalação até o acompanhamento. Garanta um sistema eficiente e seguro para o seu negócio. Entre em contato para saber mais!</p>
+    
+            </div>
+
 
 
     <script src="script.js"></script>
